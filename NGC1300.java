@@ -24,6 +24,7 @@ public class NGC1300 extends JFrame {
       this.setVisible(true);
    }
    
+   // creates a new NGC1300
    public static void main(String[] args) {
       new NGC1300();
    }
@@ -87,9 +88,7 @@ public class NGC1300 extends JFrame {
             if (lefts == 1 && keysPressed == 5) {nextScreen("loseScreenBomb.jpg");} //eventThree option
          }
          if (key_r) {key_r = false; restart();} // restarts the game
-         if (key_space) {key_space = false; nextScreen("howToPlay.jpg");}
-         
-         // correct event path is 1-right 2-down 3-right      
+         if (key_space) {key_space = false; nextScreen("howToPlay.jpg");}    
          repaint();
       }
       
